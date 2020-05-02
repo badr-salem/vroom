@@ -1,1 +1,5 @@
 in your sql server import the database file its name = "vroom.bacpac" then in appsettings.json put the path of your sql server
+
+to access the admin panel https://localhost:####/identity/account/login
+user  / admin
+password / 123456
