@@ -1,0 +1,1 @@
+in your sql server import the database file its name = "vroom.bacpac" then in appsettings.json put the path of your sql server

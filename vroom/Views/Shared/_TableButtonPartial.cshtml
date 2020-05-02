@@ -1,0 +1,14 @@
+﻿@model int
+
+<td class="text-right">
+    <div class="btn-group" role="group">
+        <a type="button" class="btn btn-primary rounded-0" href="@Url.Action("View/"+Model)"> <i class="fas fa-info-circle"></i> </a>
+        <a type="button" class="btn btn-primary rounded-0" href="@Url.Action("Edit/"+Model)"> <i class="far fa-edit"></i> </a>
+        <form method="post" action="Delete">
+            <button onclick="if (!confirm('Are You Sure You want to delete this item?')){ return false }" type="submit" class="btn btn-danger rounded-0" asp-action="Delete" asp-route-id="@Model"><i class="far fa-trash-alt"></i></button>
+        </form>
+
+    </div>
+</td>
+
+

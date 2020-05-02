@@ -1,0 +1,37 @@
+﻿@model vroom.Models.ViewModels.BikeViewModel
+@using vroom.Extensions
+@{
+    ViewData["Title"] = "View";
+
+}
+<br />
+<br />
+<div class="container pt-1 text-center">
+    <div class="jumbotron pt-1" style="background-color:white;">
+        <h2>@Model.Bike.Make.Name @Model.Bike.Model.Name @Model.Bike.Year</h2>
+        <div class="row pt-3">
+            <div class="col-6">
+                <img src="\@Model.Bike.ImagePath" class="img-thumbnail" style="border:#FAFAFA;" />
+
+            </div>
+            <div class="col-6" style="font-size: larger;">
+                <br />
+
+                <b><i style="color:red;" class="fas fa-tachometer-alt"></i> &nbsp; Mileage : </b> @Model.Bike.Mileage <br />
+                <b><i style="color:green;" class="fas fa-coins"></i>&nbsp; Price : </b> @Model.Bike.Price @Model.Bike.Currency <br />
+                <b><i style="color:blue;" class="fas fa-info-circle"></i> Features</b> <br />
+                @Model.Bike.Features <br /> <br />
+                <b><i class="far fa-address-book"></i>&nbsp; Contact Info</b> <br />
+                <i class="fas fa-user"></i>&nbsp; @Model.Bike.SellerName <br />
+              <i class="fas fa-phone-alt"></i>&nbsp;  @Model.Bike.SellerPhone <br />
+               <i class="fas fa-envelope"></i> &nbsp; @Model.Bike.SellerEmail
+
+
+            </div>
+
+        </div>
+    </div>
+    
+
+
+</div>
